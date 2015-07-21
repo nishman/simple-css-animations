@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<title>Simple CSS Animations Library Demo</title>
+	<link rel="stylesheet" type="text/css" href="simpleAnimationsLibrary.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+	* {
+		vertical-align: top;
+	}
+	.square {
+		padding: 15px;
+		height: 150px;
+		width: 150px;
+		margin: 20px;
+		display: inline-block;
+	}
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+	.red {
+		background-color: red;
+		color: white;
+	}
+	.green {
+		background-color: green;
+		color: white;
+	}
+	.yellow {
+		background-color: yellow;
+	}
+	button {
+		margin: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<h2>hover-rotate</h2>
+		<div class="squares">
+			<div class="blue square hover-rotate-90">hover-rotate-90</div>
+			<div class="blue square hover-rotate-180">hover-rotate-180</div>
+			<div class="blue square hover-rotate-270">hover-rotate-270</div>
+			<div class="blue square hover-rotate-360">hover-rotate-360</div>
+		</div>
+
+		<div class="squares">
+			<div class="blue square hover-rotate--90">hover-rotate--90</div>
+			<div class="blue square hover-rotate--180">hover-rotate--180</div>
+			<div class="blue square hover-rotate--270">hover-rotate--270</div>
+			<div class="blue square hover-rotate--360">hover-rotate--360</div>
+		</div>
+
+		<h2>hover-stretch and hover-shrink</h2>
+		<div class="squares">
+			<div class="green square hover-stretch">hover-stretch</div>
+			<div class="green square hover-stretch-x">hover-stretch-x</div>
+			<div class="green square hover-stretch-y">hover-stretch-y</div>
+			<div class="green square hover-shrink">hover-shrink</div>
+		</div>
+
+		<div class="squares">
+			<div class="green square hover-shrink-x">hover-shrink-x</div>
+			<div class="green square hover-shrink-y">hover-shrink-y</div>
+			<div class="green square hover-stretch-x-shrink-y">hover-stretch-x-shrink-y</div>
+			<div class="green square hover-shrink-x-stretch-y">hover-shrink-x-stretch-y</div>
+		</div>
+
+		<h2>hover-push</h2>
+		<div class="squares">
+			<div class="red square hover-push-right">hover-push-right</div>
+			<div class="red square hover-push-left">hover-push-left</div>
+			<div class="red square hover-push-up">hover-push-up</div>
+			<div class="red square hover-push-down">hover-push-down</div>
+		</div>
+
+		<div class="squares">
+			<div class="red square hover-push-up-right">hover-push-up-right</div>
+			<div class="red square hover-push-down-right">hover-push-down-right</div>
+			<div class="red square hover-push-down-left">hover-push-down-left</div>
+			<div class="red square hover-push-up-left">hover-push-up-left</div>
+		</div>
+
+		<h2>click-rotate</h2>
+		<div class="squares">
+			<button class="btn btn-primary click-rotate-90">click-rotate-90</button>
+			<button class="btn btn-primary click-rotate-180">click-rotate-180</button>
+			<button class="btn btn-primary click-rotate-270">click-rotate-270</button>
+			<button class="btn btn-primary click-rotate-360">click-rotate-360</button>
+		</div>
+
+		<div class="squares">
+			<button class="btn btn-primary click-rotate--90">click-rotate--90</button>
+			<button class="btn btn-primary click-rotate--180">click-rotate--180</button>
+			<button class="btn btn-primary click-rotate--270">click-rotate--270</button>
+			<button class="btn btn-primary click-rotate--360">click-rotate--360</button>
+		</div>
+
+		<h2>click-stretch and click-shrink</h2>
+		<div class="squares">
+			<button class="btn btn-success click-stretch">click-stretch</button>
+			<button class="btn btn-success click-shrink">click-shrink</button>
+			<button class="btn btn-success click-shrink-x-stretch-y">click-shrink-x-stretch-y</button>
+			<button class="btn btn-success click-stretch-x-shrink-y">click-stretch-x-shrink-y</button>
+		</div>
+
+		<div class="squares">
+			<button class="btn btn-success click-stretch-x">click-stretch-x</button>
+			<button class="btn btn-success click-shrink-x">click-shrink-x</button>
+			<button class="btn btn-success click-stretch-y">click-stretch-y</button>
+			<button class="btn btn-success click-shrink-y">click-shrink-y</button>
+		</div>
+
+		<h2>click-push</h2>
+		<div class="squares">
+			<button class="btn btn-danger click-push-right">click-push-right</button>
+			<button class="btn btn-danger click-push-left">click-push-left</button>
+			<button class="btn btn-danger click-push-up">click-push-up</button>
+			<button class="btn btn-danger click-push-down">click-push-down</button>
+		</div>
+
+		<div class="squares">
+			<button class="btn btn-danger click-push-up-right">click-push-up-right</button>
+			<button class="btn btn-danger click-push-down-right">click-push-down-right</button>
+			<button class="btn btn-danger click-push-up-left">click-push-up-left</button>
+			<button class="btn btn-danger click-push-down-left">click-push-down-left</button>
+		</div>
+
+		<br><br>
+
+	</div><!-- container end -->
+</body>
+</html>

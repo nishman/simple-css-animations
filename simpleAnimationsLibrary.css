@@ -1,0 +1,216 @@
+* {
+	transition: all 0.5s;
+}
+
+.hover-rotate-90:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.hover-rotate-180:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(180deg);
+}
+
+.hover-rotate-270:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(270deg);
+}
+
+.hover-rotate-360:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(360deg);
+}
+
+.hover-rotate--90:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.hover-rotate--180:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-180deg);
+}
+
+.hover-rotate--270:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-270deg);
+}
+
+.hover-rotate--360:hover {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.hover-stretch:hover {
+	transform: scale(1.15);
+}
+
+.hover-stretch-x:hover {
+	transform: scaleX(1.15);
+}
+
+.hover-stretch-y:hover {
+	transform: scaleY(1.15);
+}
+
+.hover-shrink:hover {
+	transform: scale(0.85);
+}
+
+.hover-shrink-x:hover {
+	transform: scaleX(0.85);
+}
+
+.hover-shrink-y:hover {
+	transform: scaleY(0.85);
+}
+
+.hover-stretch-x-shrink-y:hover {
+	transform: scale(1.15, 0.85);
+}
+
+.hover-shrink-x-stretch-y:hover {
+	transform: scale(0.85, 1.15);
+}
+
+.hover-push-right:hover {
+	transform: translateX(15px);
+}
+
+.hover-push-left:hover {
+	transform: translateX(-15px);
+}
+
+.hover-push-up:hover {
+	transform: translateY(-15px);
+}
+
+.hover-push-down:hover {
+	transform: translateY(15px);
+}
+
+.hover-push-up-right:hover {
+	transform: translate(15px, -15px);
+}
+
+.hover-push-down-right:hover {
+	transform: translate(15px, 15px);
+}
+
+.hover-push-down-left:hover {
+	transform: translate(-15px, 15px);
+}
+
+.hover-push-up-left:hover {
+	transform: translate(-15px, -15px);
+}
+
+* {
+	transition: all 0.5s;
+	vertical-align: top;
+}
+
+.click-rotate-90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.click-rotate-180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(180deg);
+}
+
+.click-rotate-270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(270deg);
+}
+
+.click-rotate-360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(360deg);
+}
+
+.click-rotate--90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.click-rotate--180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-180deg);
+}
+
+.click-rotate--270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-270deg);
+}
+
+.click-rotate--360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.click-stretch:focus {
+	transform: scale(1.15);
+}
+
+.click-stretch-x:focus {
+	transform: scaleX(1.15);
+}
+
+.click-stretch-y:focus {
+	transform: scaleY(1.15);
+}
+
+.click-shrink:focus {
+	transform: scale(0.85);
+}
+
+.click-shrink-x:focus {
+	transform: scaleX(0.85);
+}
+
+.click-shrink-y:focus {
+	transform: scaleY(0.85);
+}
+
+.click-stretch-x-shrink-y:focus {
+	transform: scale(1.15, 0.85);
+}
+
+.click-shrink-x-stretch-y:focus {
+	transform: scale(0.85, 1.15);
+}
+
+.click-push-right:focus {
+	transform: translateX(15px);
+}
+
+.click-push-left:focus {
+	transform: translateX(-15px);
+}
+
+.click-push-up:focus {
+	transform: translateY(-15px);
+}
+
+.click-push-down:focus {
+	transform: translateY(15px);
+}
+
+.click-push-up-right:focus {
+	transform: translate(15px, -15px);
+}
+
+.click-push-down-right:focus {
+	transform: translate(15px, 15px);
+}
+
+.click-push-down-left:focus {
+	transform: translate(-15px, 15px);
+}
+
+.click-push-up-left:focus {
+	transform: translate(-15px, -15px);
+}
