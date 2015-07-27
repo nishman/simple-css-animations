@@ -2,6 +2,112 @@
 	transition: all 0.5s;
 }
 
+/* FOCUS */
+
+.click-rotate-90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.click-rotate-180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(180deg);
+}
+
+.click-rotate-270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(270deg);
+}
+
+.click-rotate-360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(360deg);
+}
+
+.click-rotate--90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.click-rotate--180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-180deg);
+}
+
+.click-rotate--270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-270deg);
+}
+
+.click-rotate--360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.click-stretch:focus {
+	transform: scale(1.15);
+}
+
+.click-stretch-x:focus {
+	transform: scaleX(1.15);
+}
+
+.click-stretch-y:focus {
+	transform: scaleY(1.15);
+}
+
+.click-shrink:focus {
+	transform: scale(0.85);
+}
+
+.click-shrink-x:focus {
+	transform: scaleX(0.85);
+}
+
+.click-shrink-y:focus {
+	transform: scaleY(0.85);
+}
+
+.click-stretch-x-shrink-y:focus {
+	transform: scale(1.15, 0.85);
+}
+
+.click-shrink-x-stretch-y:focus {
+	transform: scale(0.85, 1.15);
+}
+
+.click-push-right:focus {
+	transform: translateX(15px);
+}
+
+.click-push-left:focus {
+	transform: translateX(-15px);
+}
+
+.click-push-up:focus {
+	transform: translateY(-15px);
+}
+
+.click-push-down:focus {
+	transform: translateY(15px);
+}
+
+.click-push-up-right:focus {
+	transform: translate(15px, -15px);
+}
+
+.click-push-down-right:focus {
+	transform: translate(15px, 15px);
+}
+
+.click-push-down-left:focus {
+	transform: translate(-15px, 15px);
+}
+
+.click-push-up-left:focus {
+	transform: translate(-15px, -15px);
+}
+
 /* HOVER */
 
 .hover-rotate-90:hover {
@@ -108,109 +214,109 @@
 	transform: translate(-15px, -15px);
 }
 
-/* FOCUS */
+/* ACTIVE */
 
-.click-rotate-90:focus {
+.click-rotate-90:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(90deg);
 }
 
-.click-rotate-180:focus {
+.click-rotate-180:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(180deg);
 }
 
-.click-rotate-270:focus {
+.click-rotate-270:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(270deg);
 }
 
-.click-rotate-360:focus {
+.click-rotate-360:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(360deg);
 }
 
-.click-rotate--90:focus {
+.click-rotate--90:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-90deg);
 }
 
-.click-rotate--180:focus {
+.click-rotate--180:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-180deg);
 }
 
-.click-rotate--270:focus {
+.click-rotate--270:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-270deg);
 }
 
-.click-rotate--360:focus {
+.click-rotate--360:active {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-360deg);
 }
 
-.click-stretch:focus {
+.click-stretch:active {
 	transform: scale(1.15);
 }
 
-.click-stretch-x:focus {
+.click-stretch-x:active {
 	transform: scaleX(1.15);
 }
 
-.click-stretch-y:focus {
+.click-stretch-y:active {
 	transform: scaleY(1.15);
 }
 
-.click-shrink:focus {
+.click-shrink:active {
 	transform: scale(0.85);
 }
 
-.click-shrink-x:focus {
+.click-shrink-x:active {
 	transform: scaleX(0.85);
 }
 
-.click-shrink-y:focus {
+.click-shrink-y:active {
 	transform: scaleY(0.85);
 }
 
-.click-stretch-x-shrink-y:focus {
+.click-stretch-x-shrink-y:active {
 	transform: scale(1.15, 0.85);
 }
 
-.click-shrink-x-stretch-y:focus {
+.click-shrink-x-stretch-y:active {
 	transform: scale(0.85, 1.15);
 }
 
-.click-push-right:focus {
+.click-push-right:active {
 	transform: translateX(15px);
 }
 
-.click-push-left:focus {
+.click-push-left:active {
 	transform: translateX(-15px);
 }
 
-.click-push-up:focus {
+.click-push-up:active {
 	transform: translateY(-15px);
 }
 
-.click-push-down:focus {
+.click-push-down:active {
 	transform: translateY(15px);
 }
 
-.click-push-up-right:focus {
+.click-push-up-right:active {
 	transform: translate(15px, -15px);
 }
 
-.click-push-down-right:focus {
+.click-push-down-right:active {
 	transform: translate(15px, 15px);
 }
 
-.click-push-down-left:focus {
+.click-push-down-left:active {
 	transform: translate(-15px, 15px);
 }
 
-.click-push-up-left:focus {
+.click-push-up-left:active {
 	transform: translate(-15px, -15px);
 }
 
