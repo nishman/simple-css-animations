@@ -2,112 +2,6 @@
 	transition: all 0.5s;
 }
 
-/* FOCUS */
-
-.click-rotate-90:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(90deg);
-}
-
-.click-rotate-180:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(180deg);
-}
-
-.click-rotate-270:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(270deg);
-}
-
-.click-rotate-360:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(360deg);
-}
-
-.click-rotate--90:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(-90deg);
-}
-
-.click-rotate--180:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(-180deg);
-}
-
-.click-rotate--270:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(-270deg);
-}
-
-.click-rotate--360:focus {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(-360deg);
-}
-
-.click-stretch:focus {
-	transform: scale(1.15);
-}
-
-.click-stretch-x:focus {
-	transform: scaleX(1.15);
-}
-
-.click-stretch-y:focus {
-	transform: scaleY(1.15);
-}
-
-.click-shrink:focus {
-	transform: scale(0.85);
-}
-
-.click-shrink-x:focus {
-	transform: scaleX(0.85);
-}
-
-.click-shrink-y:focus {
-	transform: scaleY(0.85);
-}
-
-.click-stretch-x-shrink-y:focus {
-	transform: scale(1.15, 0.85);
-}
-
-.click-shrink-x-stretch-y:focus {
-	transform: scale(0.85, 1.15);
-}
-
-.click-push-right:focus {
-	transform: translateX(15px);
-}
-
-.click-push-left:focus {
-	transform: translateX(-15px);
-}
-
-.click-push-up:focus {
-	transform: translateY(-15px);
-}
-
-.click-push-down:focus {
-	transform: translateY(15px);
-}
-
-.click-push-up-right:focus {
-	transform: translate(15px, -15px);
-}
-
-.click-push-down-right:focus {
-	transform: translate(15px, 15px);
-}
-
-.click-push-down-left:focus {
-	transform: translate(-15px, 15px);
-}
-
-.click-push-up-left:focus {
-	transform: translate(-15px, -15px);
-}
-
 /* HOVER */
 
 .hover-rotate-90:hover {
@@ -211,6 +105,112 @@
 }
 
 .hover-push-up-left:hover {
+	transform: translate(-15px, -15px);
+}
+
+/* FOCUS */
+
+.click-rotate-90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.click-rotate-180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(180deg);
+}
+
+.click-rotate-270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(270deg);
+}
+
+.click-rotate-360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(360deg);
+}
+
+.click-rotate--90:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.click-rotate--180:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-180deg);
+}
+
+.click-rotate--270:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-270deg);
+}
+
+.click-rotate--360:focus {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.click-stretch:focus {
+	transform: scale(1.15);
+}
+
+.click-stretch-x:focus {
+	transform: scaleX(1.15);
+}
+
+.click-stretch-y:focus {
+	transform: scaleY(1.15);
+}
+
+.click-shrink:focus {
+	transform: scale(0.85);
+}
+
+.click-shrink-x:focus {
+	transform: scaleX(0.85);
+}
+
+.click-shrink-y:focus {
+	transform: scaleY(0.85);
+}
+
+.click-stretch-x-shrink-y:focus {
+	transform: scale(1.15, 0.85);
+}
+
+.click-shrink-x-stretch-y:focus {
+	transform: scale(0.85, 1.15);
+}
+
+.click-push-right:focus {
+	transform: translateX(15px);
+}
+
+.click-push-left:focus {
+	transform: translateX(-15px);
+}
+
+.click-push-up:focus {
+	transform: translateY(-15px);
+}
+
+.click-push-down:focus {
+	transform: translateY(15px);
+}
+
+.click-push-up-right:focus {
+	transform: translate(15px, -15px);
+}
+
+.click-push-down-right:focus {
+	transform: translate(15px, 15px);
+}
+
+.click-push-down-left:focus {
+	transform: translate(-15px, 15px);
+}
+
+.click-push-up-left:focus {
 	transform: translate(-15px, -15px);
 }
 
