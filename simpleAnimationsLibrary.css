@@ -2,6 +2,8 @@
 	transition: all 0.5s;
 }
 
+/* HOVER */
+
 .hover-rotate-90:hover {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(90deg);
@@ -106,10 +108,7 @@
 	transform: translate(-15px, -15px);
 }
 
-* {
-	transition: all 0.5s;
-	vertical-align: top;
-}
+/* FOCUS */
 
 .click-rotate-90:focus {
 	transition: all 0.5s ease-in-out;
@@ -212,5 +211,111 @@
 }
 
 .click-push-up-left:focus {
+	transform: translate(-15px, -15px);
+}
+
+/* TARGET */
+
+.click-rotate-90:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.click-rotate-180:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(180deg);
+}
+
+.click-rotate-270:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(270deg);
+}
+
+.click-rotate-360:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(360deg);
+}
+
+.click-rotate--90:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-90deg);
+}
+
+.click-rotate--180:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-180deg);
+}
+
+.click-rotate--270:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-270deg);
+}
+
+.click-rotate--360:target {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.click-stretch:target {
+	transform: scale(1.15);
+}
+
+.click-stretch-x:target {
+	transform: scaleX(1.15);
+}
+
+.click-stretch-y:target {
+	transform: scaleY(1.15);
+}
+
+.click-shrink:target {
+	transform: scale(0.85);
+}
+
+.click-shrink-x:target {
+	transform: scaleX(0.85);
+}
+
+.click-shrink-y:target {
+	transform: scaleY(0.85);
+}
+
+.click-stretch-x-shrink-y:target {
+	transform: scale(1.15, 0.85);
+}
+
+.click-shrink-x-stretch-y:target {
+	transform: scale(0.85, 1.15);
+}
+
+.click-push-right:target {
+	transform: translateX(15px);
+}
+
+.click-push-left:target {
+	transform: translateX(-15px);
+}
+
+.click-push-up:target {
+	transform: translateY(-15px);
+}
+
+.click-push-down:target {
+	transform: translateY(15px);
+}
+
+.click-push-up-right:target {
+	transform: translate(15px, -15px);
+}
+
+.click-push-down-right:target {
+	transform: translate(15px, 15px);
+}
+
+.click-push-down-left:target {
+	transform: translate(-15px, 15px);
+}
+
+.click-push-up-left:target {
 	transform: translate(-15px, -15px);
 }
