@@ -9,6 +9,9 @@
 	* {
 		vertical-align: top;
 	}
+	.wrapper {
+		display: inline-block;
+	}
 	.square {
 		padding: 15px;
 		height: 150px;
@@ -30,14 +33,29 @@
 	}
 	.yellow {
 		background-color: yellow;
+		color: black;
+	}
+	.orange {
+		background-color: orange;
+		color: black;
 	}
 	button {
 		margin: 20px;
+	}
+	.wrapper button {
+		margin: 0px;
+	}
+	.layer {
+		padding: 15px;
+		display: inline-block;
 	}
 	</style>
 </head>
 <body>
 	<div class="container">
+
+	<h1>Single Animations</h1>
+		<p>For single animations, just add the appropriate class name to the item you want to animate.</p>
 
 		<h2>hover-rotate</h2>
 		<div class="squares">
@@ -127,6 +145,76 @@
 			<button class="btn btn-danger click-push-down-right">click-push-down-right</button>
 			<button class="btn btn-danger click-push-up-left">click-push-up-left</button>
 			<button class="btn btn-danger click-push-down-left">click-push-down-left</button>
+		</div>
+
+		<br><br>
+
+	<h1>Combined Animations</h1>
+		<p>To combine multiple animation events, create one wrapper "div" around the target element for each additional effect. Add one class to the target and one to each wrapper.</p>
+
+		<div class="layer orange">
+			<p>Effect 3</p>
+			<div class="layer green">
+				<p>Effect 2</p>
+				<div class="layer yellow">
+					<p>Effect 1</p>
+				</div>
+			</div>
+		</div>
+
+		<p><b>NOTE: rotating will change the direction for other animations (see examples 2 & 5 below).</b></p>
+
+
+		<div class="row">
+			<div class="col-md-4">
+				<h3>hover-stretch, <br> click-rotate-360</h3>
+				<div class="wrapper hover-stretch">
+					<button class="btn btn-warning click-rotate-360">GO!!</button>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<h3>hover-rotate--270, <br> click-push-up</h3>
+				<div class="wrapper hover-rotate--270">
+					<button class="btn btn-success click-push-up">GO!!</button>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<h3>hover-push-up, <br> click-shrink</h3>
+				<div class="wrapper hover-push-up">
+					<button class="btn btn-info click-shrink">GO!!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<h3>hover-stretch, <br> hover-push-up, <br> click-rotate-360</h3>
+				<div class="wrapper hover-stretch">
+					<div class="wrapper hover-push-up">
+						<button class="btn btn-primary click-rotate-360">GO!!</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<h3>hover-rotate-180, <br> hover-shrink, <br> click-push-up</h3>
+				<div class="wrapper hover-rotate-180">
+					<div class="wrapper hover-shrink">
+						<button class="btn btn-danger click-push-up">GO!!</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<h3>hover-stretch-x, <br> hover-push-right, <br> click-rotate--180</h3>
+				<div class="wrapper hover-stretch-x">
+					<div class="wrapper hover-push-right">
+						<button class="btn btn-default click-rotate--180">GO!!</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<br><br>
