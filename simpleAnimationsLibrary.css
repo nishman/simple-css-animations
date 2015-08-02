@@ -320,108 +320,108 @@
 	transform: translate(-15px, -15px);
 }
 
-/* TARGET */
+/* CHECKED */
 
-.click-rotate-90:target {
+.checked-rotate-90:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(90deg);
 }
 
-.click-rotate-180:target {
+.checked-rotate-180:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(180deg);
 }
 
-.click-rotate-270:target {
+.checked-rotate-270:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(270deg);
 }
 
-.click-rotate-360:target {
+.checked-rotate-360:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(360deg);
 }
 
-.click-rotate--90:target {
+.checked-rotate--90:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-90deg);
 }
 
-.click-rotate--180:target {
+.checked-rotate--180:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-180deg);
 }
 
-.click-rotate--270:target {
+.checked-rotate--270:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-270deg);
 }
 
-.click-rotate--360:target {
+.checked-rotate--360:checked {
 	transition: all 0.5s ease-in-out;
 	transform: rotate(-360deg);
 }
 
-.click-stretch:target {
-	transform: scale(1.15);
+.checked-stretch:checked {
+	transform: scale(1.25);
 }
 
-.click-stretch-x:target {
-	transform: scaleX(1.15);
+.checked-stretch-x:checked {
+	transform: scaleX(1.25);
 }
 
-.click-stretch-y:target {
-	transform: scaleY(1.15);
+.checked-stretch-y:checked {
+	transform: scaleY(1.25);
 }
 
-.click-shrink:target {
-	transform: scale(0.85);
+.checked-shrink:checked {
+	transform: scale(0.80);
 }
 
-.click-shrink-x:target {
-	transform: scaleX(0.85);
+.checked-shrink-x:checked {
+	transform: scaleX(0.80);
 }
 
-.click-shrink-y:target {
-	transform: scaleY(0.85);
+.checked-shrink-y:checked {
+	transform: scaleY(0.80);
 }
 
-.click-stretch-x-shrink-y:target {
-	transform: scale(1.15, 0.85);
+.checked-stretch-x-shrink-y:checked {
+	transform: scale(1.25, 0.80);
 }
 
-.click-shrink-x-stretch-y:target {
-	transform: scale(0.85, 1.15);
+.checked-shrink-x-stretch-y:checked {
+	transform: scale(0.80, 1.25);
 }
 
-.click-push-right:target {
-	transform: translateX(15px);
+.checked-push-right:checked {
+	transform: translateX(10px);
 }
 
-.click-push-left:target {
-	transform: translateX(-15px);
+.checked-push-left:checked {
+	transform: translateX(-10px);
 }
 
-.click-push-up:target {
-	transform: translateY(-15px);
+.checked-push-up:checked {
+	transform: translateY(-10px);
 }
 
-.click-push-down:target {
-	transform: translateY(15px);
+.checked-push-down:checked {
+	transform: translateY(10px);
 }
 
-.click-push-up-right:target {
-	transform: translate(15px, -15px);
+.checked-push-up-right:checked {
+	transform: translate(10px, -10px);
 }
 
-.click-push-down-right:target {
-	transform: translate(15px, 15px);
+.checked-push-down-right:checked {
+	transform: translate(10px, 10px);
 }
 
-.click-push-down-left:target {
-	transform: translate(-15px, 15px);
+.checked-push-down-left:checked {
+	transform: translate(-10px, 10px);
 }
 
-.click-push-up-left:target {
-	transform: translate(-15px, -15px);
+.checked-push-up-left:checked {
+	transform: translate(-10px, -10px);
 }
