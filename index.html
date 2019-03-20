@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+	<title>Simple CSS Animations Library Demo</title>
+	<link rel="stylesheet" type="text/css" href="simpleAnimationsLibrary.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+	* {
+		vertical-align: top;
+	}
+	.wrapper {
+		display: inline-block;
+	}
+	.square {
+		padding: 15px;
+		height: 150px;
+		width: 150px;
+		margin: 20px;
+		display: inline-block;
+	}
+	.squares label {
+		margin-right: 30px !important;
+	}
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+	.red {
+		background-color: red;
+		color: white;
+	}
+	.green {
+		background-color: green;
+		color: white;
+	}
+	.yellow {
+		background-color: yellow;
+		color: black;
+	}
+	.orange {
+		background-color: orange;
+		color: black;
+	}
+	button {
+		margin: 20px;
+	}
+	.wrapper button {
+		margin: 0px;
+	}
+	.layer {
+		padding: 15px;
+		display: inline-block;
+	}
+	.rad {
+		transform: scale(1.5);
+		display: inline-block;
+		margin-right: 5px;
+	}
+	#radio-buttons {
+		display: inline-block;
+		margin-left: 20px;
+	}
+	#radio-buttons a {
+		margin-right: 10px;
+	}
+	</style>
+
+</head>
+<body>	
+
+	<main class="container">
+
+		<h1>Simple CSS Animations</h1>
+		<p>Download from <a target="_blank" href="https://github.com/nishman/simple-css-animations">GitHub</a>.</p>
+		<p>This is a pure CSS library for animating HTML elements. Include the <a target="_blank" href="https://github.com/nishman/simple-css-animations">CSS file</a> in your project and use these CSS classes to animate various elements when you click, hover, or tab over them. Each item in the "Single Animations" section is labelled with its class name.</p>
+		<p><b>NOTES</b></p>
+		<ul>
+			<li>In Mac OSX Firefox and Safari, buttons do not stay focused after you click them. You have to hold down the mouse button (or tab through them one at a time) to see the full click animations. Button animations work normally in all major Windows browsers and OSX Chrome.</li>
+			<li>For better support with older browsers, use with <a href="http://leaverou.github.io/prefixfree/">-prefix-free</a> or <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>.</li>
+		</ul>
+
+		<hr>
+
+		<section id="examples">
+
+			<h2>Examples</h2>
+			<p>Animation classes can be combined with all sorts of elements for rich (and sometimes bizarre) interactions. Get as crazy as you want! =)</p>
+
+				<article id="examples-form-elements">
+
+					<h4>Form Elements</h4>
+					<p>Tired of normal form inputs? Want something a little bonkers?</p>
+
+					<a style="text-decoration:none;">
+						<label style="color:black;" class="hover-stretch">Expanding label:</label>
+					</a>
+					<br>
+					<input type="text" class="click-rotate-180" placeholder="Type upside-down?!" />
+
+					<a style="text-decoration:none;">
+						<label style="color:black;" class="hover-push-right">
+							Click me! &nbsp;
+							<div class="rad click-stretch">
+								<input type="checkbox" class="checked-rotate-360">
+							</div>
+						</label>
+					</a>
+
+					<div id="radio-buttons">
+						<a style="text-decoration:none;">
+							<label style="color:black;" class="hover-stretch">
+								<input type="radio" name="rad" value="1" class="checked-push-up"> Make
+							</label>
+						</a>
+						<a style="text-decoration:none;">
+							<label style="color:black;" class="hover-stretch">
+								<input type="radio" name="rad" value="2" class="checked-push-up"> Radio
+							</label>
+						</a>
+						<a style="text-decoration:none;">
+							<label style="color:black;" class="hover-stretch">
+								<input type="radio" name="rad" value="3" class="checked-push-up"> Buttons
+							</label>
+						</a>
+						<a style="text-decoration:none;">
+							<label style="color:black;" class="hover-stretch">
+								<input type="radio" name="rad" value="4" class="checked-push-up"> Pop!
+							</label>
+						</a>
+					</div>
+
+				</article>
+
+				<br>
+				
+				<article id="examples-images">
+
+					<h4>Images</h4>
+					<p>This is Happy. Hover on and off to make him giggle. Click to make him fall down laughing!</p>
+
+					<a>
+						<div style="display:inline-block;" class="hover-stretch-x-shrink-y">
+							<button style="background-color:transparent;border:0px;" class="click-rotate-180">
+								<img src="smile.png" alt="Happy Face">
+							</button>
+						</div>
+					</a>
+
+				</article>
+
+			</div>
+
+		</section>
+
+		<hr>
+
+		<section id="single-animations">
+
+			<h2>Single Animations</h2>
+			<p>For single animations, just add one of these class names to the item you want to animate.</p>
+
+			<article id="hover-classes">
+
+				<h3>Hover Classes</h3>
+				<p>These can be applied to almost any block or inline-block element.</p>
+
+				<section class="rotate">
+
+					<h4>Rotate</h4>
+
+					<div class="squares">
+						<a><div class="blue square hover-rotate-90">hover-rotate-90</div></a>
+						<a><div class="blue square hover-rotate-180">hover-rotate-180</div></a>
+						<a><div class="blue square hover-rotate-270">hover-rotate-270</div></a>
+						<a><div class="blue square hover-rotate-360">hover-rotate-360</div></a>
+					</div>
+
+					<div class="squares">
+						<a><div class="blue square hover-rotate--90">hover-rotate--90</div></a>
+						<a><div class="blue square hover-rotate--180">hover-rotate--180</div></a>
+						<a><div class="blue square hover-rotate--270">hover-rotate--270</div></a>
+						<a><div class="blue square hover-rotate--360">hover-rotate--360</div></a>
+					</div>
+
+				</section>
+
+				<section class="stretch">
+
+					<h4>Stretch and Shrink</h4>
+
+					<div class="squares">
+						<a><div class="green square hover-stretch">hover-stretch</div></a>
+						<a><div class="green square hover-stretch-x">hover-stretch-x</div></a>
+						<a><div class="green square hover-stretch-y">hover-stretch-y</div></a>
+						<a><div class="green square hover-shrink">hover-shrink</div></a>
+					</div>
+
+					<div class="squares">
+						<a><div class="green square hover-shrink-x">hover-shrink-x</div></a>
+						<a><div class="green square hover-shrink-y">hover-shrink-y</div></a>
+						<a><div class="green square hover-stretch-x-shrink-y">hover-stretch-x-shrink-y</div></a>
+						<a><div class="green square hover-shrink-x-stretch-y">hover-shrink-x-stretch-y</div></a>
+					</div>
+
+				</section>
+
+				<section class="push">
+
+					<h4>Push</h4>
+
+					<div class="squares">
+						<a><div class="red square hover-push-right">hover-push-right</div></a>
+						<a><div class="red square hover-push-left">hover-push-left</div></a>
+						<a><div class="red square hover-push-up">hover-push-up</div></a>
+						<a><div class="red square hover-push-down">hover-push-down</div></a>
+					</div>
+
+					<div class="squares">
+						<a><div class="red square hover-push-up-right">hover-push-up-right</div></a>
+						<a><div class="red square hover-push-down-right">hover-push-down-right</div></a>
+						<a><div class="red square hover-push-down-left">hover-push-down-left</div></a>
+						<a><div class="red square hover-push-up-left">hover-push-up-left</div></a>
+					</div>
+
+				</section>
+
+			</article>
+
+			<article id="click-classes">
+
+				<h3>Click Classes</h3>
+				<p>These animations trigger when you click on (or tab to) a clickable element. They work best on buttons and form inputs.</p>
+
+				<section class="rotate">
+
+					<h4>Rotate</h4>
+
+					<div class="squares">
+						<button class="btn btn-primary click-rotate-90">click-rotate-90</button>
+						<button class="btn btn-primary click-rotate-180">click-rotate-180</button>
+						<button class="btn btn-primary click-rotate-270">click-rotate-270</button>
+						<button class="btn btn-primary click-rotate-360">click-rotate-360</button>
+					</div>
+
+					<div class="squares">
+						<button class="btn btn-primary click-rotate--90">click-rotate--90</button>
+						<button class="btn btn-primary click-rotate--180">click-rotate--180</button>
+						<button class="btn btn-primary click-rotate--270">click-rotate--270</button>
+						<button class="btn btn-primary click-rotate--360">click-rotate--360</button>
+					</div>
+
+				</section>
+
+				<section class="stretch">
+
+					<h4>Stretch and Shrink</h4>
+
+					<div class="squares">
+						<button class="btn btn-success click-stretch">click-stretch</button>
+						<button class="btn btn-success click-shrink">click-shrink</button>
+						<button class="btn btn-success click-shrink-x-stretch-y">click-shrink-x-stretch-y</button>
+						<button class="btn btn-success click-stretch-x-shrink-y">click-stretch-x-shrink-y</button>
+					</div>
+
+					<div class="squares">
+						<button class="btn btn-success click-stretch-x">click-stretch-x</button>
+						<button class="btn btn-success click-shrink-x">click-shrink-x</button>
+						<button class="btn btn-success click-stretch-y">click-stretch-y</button>
+						<button class="btn btn-success click-shrink-y">click-shrink-y</button>
+					</div>
+
+				</section>
+
+				<section class="push">
+
+					<h4>Push</h4>
+
+					<div class="squares">
+						<button class="btn btn-danger click-push-right">click-push-right</button>
+						<button class="btn btn-danger click-push-left">click-push-left</button>
+						<button class="btn btn-danger click-push-up">click-push-up</button>
+						<button class="btn btn-danger click-push-down">click-push-down</button>
+					</div>
+
+					<div class="squares">
+						<button class="btn btn-danger click-push-up-right">click-push-up-right</button>
+						<button class="btn btn-danger click-push-down-right">click-push-down-right</button>
+						<button class="btn btn-danger click-push-up-left">click-push-up-left</button>
+						<button class="btn btn-danger click-push-down-left">click-push-down-left</button>
+					</div>
+
+				</section>
+
+			</article>
+
+			<article id="checked-classes">
+
+				<h3>Checked Classes</h3>
+				<p>Checked classes can be applied to checkboxes and radio buttons. These items are usually pretty small, so combine the animation classes with your own custom CSS styles to emphasize the animations.</p>
+
+				<section class="rotate">
+
+					<h4>Rotate</h4>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate-90">
+							</div> checked-rotate-90
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate-180">
+							</div> checked-rotate-180
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate-270">
+							</div> checked-rotate-270
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate-360">
+							</div> checked-rotate-360
+						</label>
+					</div>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate--90">
+							</div> checked-rotate--90
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate--180">
+							</div> checked-rotate--180
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate--270">
+							</div> checked-rotate--270
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-rotate--360">
+							</div> checked-rotate--360
+						</label>
+					</div>
+
+				</section>
+
+				<section class="stretch">
+
+					<h4>Stretch and Shrink</h4>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-stretch">
+							</div> checked-stretch
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-shrink">
+							</div> checked-shrink
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-shrink-x-stretch-y">
+							</div> checked-shrink-x-stretch-y
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-stretch-x-shrink-y">
+							</div> checked-stretch-x-shrink-y
+						</label>
+					</div>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-stretch-x">
+							</div> checked-stretch-x
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-shrink-x">
+							</div> checked-shrink-x
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-stretch-y">
+							</div> checked-stretch-y
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-shrink-y">
+							</div> checked-shrink-y
+						</label>
+					</div>
+
+				</section>
+
+				<section class="push">
+
+					<h4>Push</h4>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-up">
+							</div> checked-push-up
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-down">
+							</div> checked-push-down
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-left">
+							</div> checked-push-left
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-right">
+							</div> checked-push-right
+						</label>
+					</div>
+
+					<div class="squares">
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-up-right">
+							</div> checked-push-up-right
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-down-right">
+							</div> checked-push-down-right
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-up-left">
+							</div> checked-push-up-left
+						</label>
+
+						<label>
+							<div class="wrapper rad">
+								<input type="checkbox" class="checked-push-down-left">
+							</div> checked-push-down-left
+						</label>
+					</div>
+
+				</section>
+
+			</article>
+
+		</section>
+		
+		<hr>
+
+		<section id="combined-animations">
+
+			<h2>Combined Animations</h2>
+			<p>To combine multiple animations, wrap an extra "div" around the target element for each additional effect. Add one class to the target and one to each wrapper div, as shown below. In most cases, you should set the display of wrapper divs to inline-block.</p>
+
+			<div class="layer orange">
+				<p>Hover Effect 2</p>
+				<div class="layer green">
+					<p>Hover Effect 1</p>
+					<div class="layer yellow">
+						<p>Click Effect</p>
+					</div>
+				</div>
+			</div>
+
+<textarea rows="8" cols="70">
+<style type="text/css">
+	.wrap { display: inline-block; }
+</style>
+<div class="wrap hover-stretch">
+	<div class="wrap hover-push-up">
+		<button class="click-rotate-360">Click!</button>
+	</div>
+</div></textarea>
+
+			<p>NOTE: Rotating will affect the direction of other animations (see examples 2 & 5 below).</p>
+
+			<div class="row">
+				<div class="col-md-4">
+					<h4>1) hover-stretch, <br> click-rotate-360</h4>
+
+					<div class="wrapper hover-stretch">
+						<button class="btn btn-warning click-rotate-360">GO!!</button>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h4>2) hover-rotate--270, <br> click-stretch-x-shrink-y</h4>
+
+					<div class="wrapper hover-rotate--270">
+						<button class="btn btn-success click-stretch-x-shrink-y">GO!!</button>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h4>3) hover-push-up, <br> click-shrink</h4>
+
+					<div class="wrapper hover-push-up">
+						<button class="btn btn-info click-shrink">GO!!</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<h4>4) hover-stretch, <br> hover-push-up, <br> click-rotate-360</h4>
+
+					<div class="wrapper hover-stretch">
+						<div class="wrapper hover-push-up">
+							<button class="btn btn-primary click-rotate-360">GO!!</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h4>5) hover-rotate-180, <br> hover-shrink, <br> click-push-up</h4>
+
+					<div class="wrapper hover-rotate-180">
+						<div class="wrapper hover-shrink">
+							<button class="btn btn-danger click-push-up">GO!!</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h4>6) hover-stretch-x, <br> hover-push-right, <br> click-rotate--180</h4>
+
+					<div class="wrapper hover-stretch-x">
+						<div class="wrapper hover-push-right">
+							<button class="btn btn-default click-rotate--180">GO!!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<br><br>
+
+	</main><!-- container end -->
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</body>
+</html>
